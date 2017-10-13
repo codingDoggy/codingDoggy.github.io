@@ -21,19 +21,18 @@
               }
         });
 
-
-        // Smoothscroll js
+        // Smooth scroll
         $(function() {
           $('.custom-navbar a, #home a').bind('click', function(event) {
-            var $anchor = $(this);
-            //FIXME home a error
+            var elem = $($(this).attr('href'));
+            if(!elem instanceof Object)
+              return;
             $('html, body').stop().animate({
-              scrollTop: $($anchor.attr('href')).offset().top - 49
+              scrollTop: elem.offset().top - 49
             }, 1000);
             event.preventDefault();
           });
         });
-
 
         // WOW Animation js
         new WOW({ mobile: false }).init();

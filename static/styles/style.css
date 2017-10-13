@@ -6,6 +6,7 @@ body {
     font-style: normal;
     font-weight: 300;
     overflow-x: hidden;
+    min-width: 300px;
 }
 
 html, body {
@@ -69,7 +70,7 @@ strong, span {
     font-weight: bold;
     letter-spacing: 1.6px;
     padding: 8px 32px 8px 32px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     -webkit-transition: all ease-in-out 0.4s;
     transition: all ease-in-out 0.4s;
 }
@@ -282,7 +283,7 @@ a:hover, a:active, a:focus {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
     position: relative;
 }
 
@@ -386,29 +387,16 @@ footer {
 /*---------------------------------------
   Mobile Responsive styles              
 -----------------------------------------*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 768px ) {
     #home {
         height: 50vh;
-    }
-}
-
-@media (min-width: 667px) and (max-width: 767px) {
-    #home {
-        height: 140vh;
-    }
-}
-
-@media (min-width: 568px) and (max-width: 665px) {
-    #home {
-        height: 190vh;
     }
 }
 
 @media (max-width: 980px) {
 
     h1 {
-        font-size: 33px;
+        font-size: 30px;
     }
 
     #work .work-thumb {
@@ -420,12 +408,12 @@ footer {
 @media (max-width: 768px) {
 
     h1 {
-        font-size: 30px;
+        font-size: 22px;
         line-height: normal;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .custom-navbar {
@@ -460,10 +448,6 @@ footer {
 }
 
 @media (max-width: 357px) {
-
-    h1 {
-        font-size: 28px;
-    }
 
     #about .col-md-4 a {
         width: 85px;
